@@ -1,7 +1,7 @@
 // @esnext use https://github.com/tc39/proposal-bind-operator
 // @esnext use https://github.com/tc39/proposal-iterator-helpers
 
-const {
+export const {
   map,
   take,
   filter,
