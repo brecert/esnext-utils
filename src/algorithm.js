@@ -28,27 +28,3 @@ export function repeatedCombinations(n) {
 
   return head;
 }
-
-export function* combinationsN(n, p) {
-  if (p === 0) {
-    return [[]];
-  }
-  let i = 0;
-  const combo = [];
-  while (combo.length < p) {
-    if (i < n) {
-      combo.push(i);
-      i += 1;
-    } else {
-      if (combo.length === 0) {
-        break;
-      }
-      i = combo.pop() + 1;
-    }
-
-    if (combo.length === p) {
-      yield combo::clone();
-      i = combo.pop() + 1;
-    }
-  }
-}
