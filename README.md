@@ -10,7 +10,7 @@ Given the import map
 ```json
 {
   "imports": {
-    "esnext-utils/": "https://raw.githubusercontent.com/Brecert/esnext-utils/main/src/",
+    "esnext-utils/": "https://raw.githubusercontent.com/Brecert/esnext-utils/main/src/"
   }
 }
 ```
