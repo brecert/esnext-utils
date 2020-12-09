@@ -1,0 +1,5 @@
+{
+  "name": "esnext-utils",
+  "version": "0.1.0",
+  "main": "./src/mod.js"
+}
