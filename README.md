@@ -24,11 +24,13 @@ Then
 import { repeatedCombinations, repeatedPermutations } from 'esnext-utils/algorithm.js'
 import { collect, range } from 'esnext-utils/iterator.js'
 import { comb } from 'esnext-utils/math.js'
+import { dbg } from 'esnext-utils/util.js'
+
 
 comb(5, 3);
 // 10
 
-['iced', 'jam', 'plain']::repeatedCombinations(2);
+['iced', 'jam', 'plain']::repeatedCombinations(2)::dbg();
 // [
 //   [ 'plain', 'plain' ],
 //   [ 'plain', 'jam' ],
@@ -38,7 +40,7 @@ comb(5, 3);
 //   [ 'iced', 'iced' ]
 // ]
 
-range(1, 3)::repeatedPermutations(2)::collect();
+range(1, 3)::repeatedPermutations(2)::collect()::dbg();
 // [
 //   [ 1, 1 ], [ 1, 2 ],
 //   [ 1, 3 ], [ 2, 1 ],
@@ -47,7 +49,7 @@ range(1, 3)::repeatedPermutations(2)::collect();
 //   [ 3, 3 ]
 // ]
 
-combinationsN(5, 3)::collect();
+combinationsN(5, 3)::collect()::dbg();
 // [
 //   [ 0, 1, 2 ], [ 0, 1, 3 ],
 //   [ 0, 1, 4 ], [ 0, 2, 3 ],
