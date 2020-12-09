@@ -6,4 +6,4 @@ import { range, map, product } from './iterator.js'
 export const comb = (n, k) =>
   range(1, k)
     ::map((i) => (n + 1 - i) / i)
-    ::product();
+    ::product()

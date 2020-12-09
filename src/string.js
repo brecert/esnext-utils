@@ -1,3 +1,3 @@
 export function* lines() {
-  yield* this.split('\n');
+  yield* this.split('\n')
 }
