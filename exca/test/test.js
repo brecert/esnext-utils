@@ -1,26 +1,3 @@
-# esnext-utils
-utils made with esnext proposals in mind
-
-todo: create runtime babel tool for using plugins dynamically with the esnext pragma
-
-## Example
-
-Given the import map
-
-```json
-{
-  "imports": {
-    "esnext-utils/": "https://raw.githubusercontent.com/Brecert/esnext-utils/main/src/"
-  }
-}
-```
-
-Then
-
-```js
-// @esnext use https://github.com/tc39/proposal-bind-operator
-// @esnext use https://github.com/tc39/proposal-iterator-helpers
-
 import { repeatedCombinations, repeatedPermutations } from 'esnext-utils/algorithm.js'
 import { collect, range } from 'esnext-utils/iterator.js'
 import { comb } from 'esnext-utils/math.js'
@@ -48,4 +25,3 @@ range(1, 3)::repeatedPermutations(2)::collect()::dbg();
 //   [ 3, 1 ], [ 3, 2 ],
 //   [ 3, 3 ]
 // ]
-```

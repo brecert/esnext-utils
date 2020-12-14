@@ -1,0 +1,28 @@
+{
+  "type": "module",
+  "name": "exca",
+  "version": "0.1.0",
+  "description": "extended emca script",
+  "license": "MIT",
+  "scripts": {
+    "test": "yarn cli run --import-map \"./test/import-map.json\" ./test/test.js",
+    "cli": "node --experimental-vm-modules ./src/bin.js"
+  },
+  "bin": {
+    "exca": "src/bin.js"
+  },
+  "dependencies": {
+    "@babel/standalone": "^7.12.10",
+    "commander": "^6.2.1",
+    "core-js": "^3.8.1",
+    "deno-importmap": "^0.1.0",
+    "node-fetch": "^2.6.1",
+    "regenerator-runtime": "^0.13.7",
+    "uri-js": "^4.4.0"
+  },
+  "devDependencies": {
+    "@types/babel__standalone": "^7.1.3",
+    "@types/node": "^14.14.13",
+    "@types/node-fetch": "^2.5.7"
+  }
+}
