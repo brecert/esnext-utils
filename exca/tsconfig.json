@@ -3,8 +3,8 @@
   "compilerOptions": {
     "target": "es2020",
     "module": "esnext",
-    "checkJs": true,
-    "allowJs": true,
+    // "checkJs": true,
+    // "allowJs": true,
     "allowSyntheticDefaultImports": true,
     "strict": true,
     "noUnusedLocals": true,

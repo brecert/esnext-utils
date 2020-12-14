@@ -4,10 +4,10 @@ import { SourceTextModule } from 'vm'
 import path from 'path'
 
 /**
- * 
- * @param {string} source 
- * @param {Resolver} resolver 
- * @param {*} [referencingModule] 
+ *
+ * @param {string} source
+ * @param {Resolver} resolver
+ * @param {*} [referencingModule]
  */
 export async function buildModule(source, resolver, referencingModule) {
   let transformedCode = transformCode(source)

@@ -1,16 +1,3 @@
-# EXCA
-> Extended EMCAScript
-
-Basically just stage-0+ babel plugins and a custom resolver for modules right now.
-
-## Usage (from this folder)
-> `npm run exca run help`
-
-## Features
-
-### Binary Operator Overloading
-
-```js
 'exca overloads enable'
 
 class Vec2D {
@@ -37,9 +24,5 @@ let vel = new Vec2D(2, 3)
 // no += yet.
 pos = pos + vel
 // Vec2D(5, 8)
-```
 
-## Todo:
-- checking and resolving import maps for every import (where possible)
-- babel macros
-- wasm importing and maybe some default compiled language that can be imported
+console.log(pos)

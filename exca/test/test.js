@@ -2,6 +2,7 @@ import { repeatedCombinations, repeatedPermutations } from 'esnext-utils/algorit
 import { collect, range } from 'esnext-utils/iterator.js'
 import { comb } from 'esnext-utils/math.js'
 import { dbg } from 'esnext-utils/util.js'
+import './binop.js'
 
 
 comb(5, 3);

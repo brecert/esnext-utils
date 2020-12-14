@@ -6,9 +6,6 @@ import { Resolver } from './resolver.js'
 
 program
   .version('0.0.0')
-  .option('-d, --debug', 'output extra debugging')
-  .option('-s, --small', 'small pizza size')
-  .option('-p, --pizza-type <type>', 'flavour of pizza')
 
 program
   .command('run <file>')

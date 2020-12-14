@@ -1,6 +1,9 @@
 import babel from '@babel/standalone'
 import 'core-js'
 import 'regenerator-runtime'
+import binopOverloading from './babel/binopOverloading.js'
+
+babel.registerPlugin("binop-overloading", binopOverloading)
 
 const plugins = babel.availablePlugins
 
@@ -11,6 +14,7 @@ const plugins = babel.availablePlugins
 export const transformCode = (code) =>
   babel.transform(code, {
     plugins: [
+      // default
       plugins['proposal-async-generator-functions'],
       plugins['proposal-class-properties'],
       plugins['proposal-class-static-block'],
@@ -43,5 +47,8 @@ export const transformCode = (code) =>
       plugins['proposal-private-property-in-object'],
       plugins['proposal-throw-expressions'],
       plugins['proposal-unicode-property-regex'],
+
+      // custom
+      plugins['binop-overloading']
     ],
   }).code
