@@ -5,8 +5,8 @@
   "description": "extended emca script",
   "license": "MIT",
   "scripts": {
-    "test": "yarn cli run --import-map \"./test/import-map.json\" ./test/test.js",
-    "cli": "node --experimental-vm-modules ./src/bin.js"
+    "test": "yarn exca run --import-map \"./test/import-map.json\" ./test/test.js",
+    "exca": "node --experimental-vm-modules ./src/bin.js"
   },
   "bin": {
     "exca": "src/bin.js"

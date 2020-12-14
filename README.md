@@ -5,7 +5,7 @@ todo: create runtime babel tool for using plugins dynamically with the esnext pr
 
 ## Example
 
-Given the import map
+While using [exca](exca/package.json) and given the following import map.
 
 ```json
 {
